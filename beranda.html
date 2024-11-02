@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kelompok Jaringan Komputer Lanjut</title>
+    <style>
+        /* Styling umum */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #e9f5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        /* Header */
+        .header {
+            background-color: #99eafe;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2rem;
+            color: #4a536b;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            color: #4a536b;
+        }
+        /* Daftar Anggota */
+        .title {
+            font-size: 1.5rem;
+            color: #4a536b;
+            margin-bottom: 20px;
+        }
+        .profiles {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .profile-card {
+            background-color: #ffffff;
+            width: 220px; /* Lebar petak */
+            padding: 30px; /* Padding dalam petak */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-8px); /* Efek angkat saat hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .profile-card img {
+            width: 100px; /* Ukuran bulat */
+            height: 100px; /* Ukuran bulat */
+            margin-bottom: 10px;
+            border: 3px solid #99eafe;
+            border-radius: 50%; /* Mengubah gambar menjadi bulat */
+            transition: transform 0.3s ease; /* Tambah transisi pada gambar */
+        }
+        .profile-card img:hover {
+            transform: scale(1.1); /* Efek zoom pada gambar saat hover */
+        }
+        .profile-card h2 {
+            font-size: 1.3rem; /* Ukuran judul lebih besar */
+            color: #4a536b;
+            margin-bottom: 5px;
+        }
+        .profile-card p {
+            font-size: 0.9rem;
+            color: #4a536b;
+        }
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #99eafe;
+            border-radius: 8px;
+            color: #4a536b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <h1>Kelompok Jaringan Komputer Lanjut</h1>
+        <p>Universitas Putra Indonesia YPTK Padang</p>
+    </div>
+
+    <!-- Daftar Anggota -->
+    <div class="title">Anggota</div>
+    <div class="profiles">
+        <!-- Profil Anggota Pertama -->
+        <div class="profile-card">
+            <img src="images/ana.jpg" alt="Foto Ivana Thahira">
+            <h2>Ivana Thahira</h2>
+            <p>22101152630109</p>
+        </div>
+
+        <!-- Profil Anggota Kedua -->
+        <div class="profile-card">
+            <img src="images/nisa.jpg" alt="Foto Khairunnisa">
+            <h2>Khairunnisa</h2>
+            <p>22101152630110</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © Kelompok Jaringan Komputer Lanjut IF-3
+    </footer>
+</div>
+
+</body>
+</html>
